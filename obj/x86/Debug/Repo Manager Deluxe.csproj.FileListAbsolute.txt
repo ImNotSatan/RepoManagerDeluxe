@@ -1,0 +1,5 @@
+C:\Users\Master\Documents\Reflector\Disassembler\Repo Manager Deluxe\obj\x86\Debug\Repo Manager Deluxe.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\Reflector\Disassembler\Repo Manager Deluxe\bin\Debug\Repo Manager Deluxe.exe
+C:\Users\Master\Documents\Reflector\Disassembler\Repo Manager Deluxe\bin\Debug\Repo Manager Deluxe.pdb
+C:\Users\Master\Documents\Reflector\Disassembler\Repo Manager Deluxe\obj\x86\Debug\Repo Manager Deluxe.exe
+C:\Users\Master\Documents\Reflector\Disassembler\Repo Manager Deluxe\obj\x86\Debug\Repo Manager Deluxe.pdb
