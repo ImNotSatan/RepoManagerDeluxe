@@ -57,6 +57,10 @@
             Console.WriteLine("Done.");
             Console.Title = "Logging";
             this.hide_logs();
+            if(!File.Exists("index.html") && !File.Exists("index.php"))
+            {
+                File.WriteAllText("index.html", "<!--RDM--><h1><center><a href='" + repolink.Text + "'>Add my Repo</a><br>By Repo Manager Deluxe.</center></h1>");
+            }
             if (File.Exists(Settings.repo + "/repo.link"))
             {
                 this.repolink.Text = File.ReadAllText(Settings.repo + "/repo.link");
@@ -834,6 +838,13 @@
                 text = "https://" + text.Replace("https:/", "").Replace("http:/", "").Replace("//", "/").TrimEnd(trimChars) + "/";
             }
             File.WriteAllText(Settings.repo + "/repo.link", text);
+            if(File.Exists("index.html"))
+            {
+                if(File.ReadAllText("index.html").Contains("<!--RDM-->"))
+                {
+                    File.WriteAllText("index.html", "<!--RDM--><h1><center><a href='" + repolink.Text + "'>Add my Repo</a><br>By Repo Manager Deluxe.</center></h1>");
+                }
+            }
         }
 
         private void save_release_Click(object sender, EventArgs e)
