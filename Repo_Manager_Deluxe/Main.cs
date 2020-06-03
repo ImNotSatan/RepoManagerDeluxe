@@ -265,6 +265,14 @@
             }
             File.WriteAllText(Settings.repo + "/Packages", builder.ToString().TrimEnd(' '));
             //Extract.create_packages_bz2("Packages", Settings.repo); //soon
+            if(File.Exists("bz2extention.exe") && File.Exists("ICSharpCode.SharpZipLib.dll"))
+            {
+                Process.Start("bz2extention.exe");
+            }
+            else
+            {
+                MessageBox.Show("bz2 extention not installed, did not create Packages.bz2");
+            }
             this.success("[success] > Packages file created succesfully.");
         }
 
@@ -693,7 +701,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(37, 13);
             this.label11.TabIndex = 15;
-            this.label11.Text = "v0.0.3";
+            this.label11.Text = "v0.0.4";
             // 
             // Main
             // 
