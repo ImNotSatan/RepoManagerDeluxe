@@ -9,6 +9,12 @@ Open it.
 
 # Dependencies
 TAR.exe in C:/Windows/System32
+When running MacOS adding TAR.exe in the same folder, and running with the exe with Mono (MIGHT) work.
+
+# Troubleshooting
+Make sure you have:
+vc_redist (By Microsoft) installed.
+https://aka.ms/vs/16/release/vc_redist.x64.exe
 
 # Note to developers
 Why does this code look so weird,
