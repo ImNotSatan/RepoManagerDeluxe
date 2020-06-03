@@ -60,7 +60,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(21, 116);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(499, 170);
             this.richTextBox1.TabIndex = 3;
@@ -85,10 +85,11 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "config";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.config_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,6 +98,14 @@
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             File.WriteAllText(Settings.repo + "/default.depiction", richTextBox1.Text);
+        }
+
+        private void config_Load(object sender, EventArgs e)
+        {
+            if (File.Exists(Settings.repo + "/default.depiction"))
+            {
+                richTextBox1.Text = File.ReadAllText(Settings.repo + "/default.depiction");
+            }
         }
     }
 }
