@@ -264,6 +264,7 @@
                 }
             }
             File.WriteAllText(Settings.repo + "/Packages", builder.ToString().TrimEnd(' '));
+            //Extract.create_packages_bz2("Packages", Settings.repo); //soon
             this.success("[success] > Packages file created succesfully.");
         }
 
