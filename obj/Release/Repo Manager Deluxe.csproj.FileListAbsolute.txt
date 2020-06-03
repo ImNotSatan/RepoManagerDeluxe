@@ -1,0 +1,10 @@
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\bin\Release\Repo Manager Deluxe.exe
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\bin\Release\Repo Manager Deluxe.pdb
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo_Manager_Deluxe.addpackage.resources
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo_Manager_Deluxe.config.resources
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo_Manager_Deluxe.edit.resources
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo_Manager_Deluxe.Main.resources
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo Manager Deluxe.csproj.GenerateResource.cache
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo Manager Deluxe.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo Manager Deluxe.exe
+C:\Users\Master\Documents\GitHub\RepoManagerDeluxe\obj\Release\Repo Manager Deluxe.pdb
