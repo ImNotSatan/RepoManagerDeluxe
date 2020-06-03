@@ -1,8 +1,8 @@
-﻿namespace Repo_Manager_Deluxe
-{
-    using System;
-    using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
+namespace Repo_Manager_Deluxe
+{
     internal static class Program
     {
         [STAThread]
@@ -10,7 +10,7 @@
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Repo_Manager_Deluxe.Main());
+            Application.Run(new Main());
         }
     }
 }

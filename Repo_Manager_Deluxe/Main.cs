@@ -343,7 +343,7 @@
             this.add_package.BackColor = System.Drawing.Color.LightGreen;
             this.add_package.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add_package.Location = new System.Drawing.Point(8, 231);
-            this.add_package.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.add_package.Margin = new System.Windows.Forms.Padding(2);
             this.add_package.Name = "add_package";
             this.add_package.Size = new System.Drawing.Size(277, 122);
             this.add_package.TabIndex = 5;
@@ -356,7 +356,7 @@
             this.generate_packages.BackColor = System.Drawing.Color.SkyBlue;
             this.generate_packages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.generate_packages.Location = new System.Drawing.Point(299, 364);
-            this.generate_packages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.generate_packages.Margin = new System.Windows.Forms.Padding(2);
             this.generate_packages.Name = "generate_packages";
             this.generate_packages.Size = new System.Drawing.Size(277, 122);
             this.generate_packages.TabIndex = 6;
@@ -369,7 +369,7 @@
             this.reload_packages.BackColor = System.Drawing.Color.LightYellow;
             this.reload_packages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reload_packages.Location = new System.Drawing.Point(299, 231);
-            this.reload_packages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reload_packages.Margin = new System.Windows.Forms.Padding(2);
             this.reload_packages.Name = "reload_packages";
             this.reload_packages.Size = new System.Drawing.Size(277, 122);
             this.reload_packages.TabIndex = 7;
@@ -382,7 +382,7 @@
             this.lock_repo.BackColor = System.Drawing.Color.MistyRose;
             this.lock_repo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lock_repo.Location = new System.Drawing.Point(8, 364);
-            this.lock_repo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lock_repo.Margin = new System.Windows.Forms.Padding(2);
             this.lock_repo.Name = "lock_repo";
             this.lock_repo.Size = new System.Drawing.Size(277, 122);
             this.lock_repo.TabIndex = 8;
@@ -397,7 +397,7 @@
             this.packagelist.FormattingEnabled = true;
             this.packagelist.ItemHeight = 31;
             this.packagelist.Location = new System.Drawing.Point(591, 244);
-            this.packagelist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.packagelist.Margin = new System.Windows.Forms.Padding(2);
             this.packagelist.Name = "packagelist";
             this.packagelist.Size = new System.Drawing.Size(509, 190);
             this.packagelist.TabIndex = 9;
@@ -430,7 +430,7 @@
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(744, 6);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(324, 209);
             this.richTextBox1.TabIndex = 10;
@@ -442,7 +442,7 @@
             this.showlogs.BackColor = System.Drawing.Color.White;
             this.showlogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showlogs.Location = new System.Drawing.Point(147, 8);
-            this.showlogs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showlogs.Margin = new System.Windows.Forms.Padding(2);
             this.showlogs.Name = "showlogs";
             this.showlogs.Size = new System.Drawing.Size(119, 29);
             this.showlogs.TabIndex = 11;
@@ -471,9 +471,9 @@
             this.groupBox1.Controls.Add(this.repo_icon);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(8, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(277, 215);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
@@ -482,7 +482,7 @@
             // repolink
             // 
             this.repolink.Location = new System.Drawing.Point(85, 187);
-            this.repolink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.repolink.Margin = new System.Windows.Forms.Padding(2);
             this.repolink.Name = "repolink";
             this.repolink.Size = new System.Drawing.Size(173, 20);
             this.repolink.TabIndex = 31;
@@ -515,7 +515,7 @@
             this.open_folder.BackColor = System.Drawing.Color.White;
             this.open_folder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.open_folder.Location = new System.Drawing.Point(4, 16);
-            this.open_folder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.open_folder.Margin = new System.Windows.Forms.Padding(2);
             this.open_folder.Name = "open_folder";
             this.open_folder.Size = new System.Drawing.Size(123, 21);
             this.open_folder.TabIndex = 29;
@@ -528,7 +528,7 @@
             this.change_icon.BackColor = System.Drawing.Color.White;
             this.change_icon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.change_icon.Location = new System.Drawing.Point(14, 155);
-            this.change_icon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.change_icon.Margin = new System.Windows.Forms.Padding(2);
             this.change_icon.Name = "change_icon";
             this.change_icon.Size = new System.Drawing.Size(67, 21);
             this.change_icon.TabIndex = 28;
@@ -541,7 +541,7 @@
             this.save_release.BackColor = System.Drawing.Color.White;
             this.save_release.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.save_release.Location = new System.Drawing.Point(164, 155);
-            this.save_release.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.save_release.Margin = new System.Windows.Forms.Padding(2);
             this.save_release.Name = "save_release";
             this.save_release.Size = new System.Drawing.Size(94, 21);
             this.save_release.TabIndex = 27;
@@ -552,7 +552,7 @@
             // description
             // 
             this.description.Location = new System.Drawing.Point(164, 72);
-            this.description.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.description.Margin = new System.Windows.Forms.Padding(2);
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(95, 20);
             this.description.TabIndex = 26;
@@ -570,7 +570,7 @@
             // version
             // 
             this.version.Location = new System.Drawing.Point(164, 135);
-            this.version.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.version.Margin = new System.Windows.Forms.Padding(2);
             this.version.Name = "version";
             this.version.Size = new System.Drawing.Size(95, 20);
             this.version.TabIndex = 24;
@@ -588,7 +588,7 @@
             // origin
             // 
             this.origin.Location = new System.Drawing.Point(164, 114);
-            this.origin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.origin.Margin = new System.Windows.Forms.Padding(2);
             this.origin.Name = "origin";
             this.origin.Size = new System.Drawing.Size(95, 20);
             this.origin.TabIndex = 22;
@@ -606,7 +606,7 @@
             // codename
             // 
             this.codename.Location = new System.Drawing.Point(164, 93);
-            this.codename.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.codename.Margin = new System.Windows.Forms.Padding(2);
             this.codename.Name = "codename";
             this.codename.Size = new System.Drawing.Size(95, 20);
             this.codename.TabIndex = 20;
@@ -624,7 +624,7 @@
             // name
             // 
             this.name.Location = new System.Drawing.Point(164, 51);
-            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name.Margin = new System.Windows.Forms.Padding(2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(95, 20);
             this.name.TabIndex = 18;
@@ -642,7 +642,7 @@
             // repo_icon
             // 
             this.repo_icon.Location = new System.Drawing.Point(25, 99);
-            this.repo_icon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.repo_icon.Margin = new System.Windows.Forms.Padding(2);
             this.repo_icon.Name = "repo_icon";
             this.repo_icon.Size = new System.Drawing.Size(43, 42);
             this.repo_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -676,7 +676,7 @@
             this.settings.BackColor = System.Drawing.Color.White;
             this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settings.Location = new System.Drawing.Point(475, 175);
-            this.settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settings.Margin = new System.Windows.Forms.Padding(2);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(115, 29);
             this.settings.TabIndex = 14;
@@ -712,7 +712,7 @@
             this.Controls.Add(this.add_package);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
