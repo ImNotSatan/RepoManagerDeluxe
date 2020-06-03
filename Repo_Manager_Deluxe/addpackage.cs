@@ -31,6 +31,10 @@
         {
             this.caller = main;
             this.InitializeComponent();
+            if(File.Exists("default.depiction"))
+            {
+                richTextBox1.Text = File.ReadAllText("default.depiction");
+            }
             this.tweakdata.Columns[0].Width = (this.tweakdata.Width / 2) - 10;
             this.tweakdata.Columns[1].Width = (this.tweakdata.Width / 2) - 10;
         }
@@ -66,13 +70,9 @@
                 using (FileStream stream = new FileStream(dialog.FileName, FileMode.Open, FileAccess.Read))
                 {
                     Image original = Image.FromStream(stream);
-                    if ((original.Width == 0x100) && (original.Height == 0x100))
+                    if ((original.Width != 256) || (original.Height != 256))
                     {
-                        original.Save(Settings.repo + "/CydiaIcon.png");
-                    }
-                    else
-                    {
-                        original = new Bitmap(original, new Size(0x100, 0x100));
+                        original = new Bitmap(original, new Size(256, 256));
                         MessageBox.Show("The size of this image is not 256x256 so its cropped to 256x256 now.");
                     }
                     this.tweak_icon.Image = original;
@@ -106,151 +106,213 @@
 
         private void InitializeComponent()
         {
-            this.label1 = new Label();
-            this.label2 = new Label();
-            this.open_tweak = new Button();
-            this.groupBox1 = new GroupBox();
-            this.tweak_info = new Label();
-            this.tweakdata = new ListView();
-            this.columnHeader1 = new ColumnHeader();
-            this.columnHeader2 = new ColumnHeader();
-            this.tweak_icon = new PictureBox();
-            this.groupBox2 = new GroupBox();
-            this.change_icon = new Button();
-            this.groupBox3 = new GroupBox();
-            this.richTextBox1 = new RichTextBox();
-            this.add_tweak = new Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.open_tweak = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tweak_info = new System.Windows.Forms.Label();
+            this.tweakdata = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tweak_icon = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.change_icon = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.add_tweak = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((ISupportInitialize) this.tweak_icon).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tweak_icon)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            base.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
-            this.label1.Font = new Font("Microsoft Sans Serif", 32f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.label1.Location = new Point(70, 0x12);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(47, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new Size(0x1fd, 0x49);
+            this.label1.Size = new System.Drawing.Size(343, 51);
             this.label1.TabIndex = 0;
             this.label1.Text = "NEW PACKAGE";
+            // 
+            // label2
+            // 
             this.label2.AutoSize = true;
-            this.label2.Font = new Font("Microsoft Sans Serif", 16f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.label2.Location = new Point(12, 0x80);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 83);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new Size(0xf9, 0x25);
+            this.label2.Size = new System.Drawing.Size(174, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "TWEAK (.DEB)";
-            this.open_tweak.BackColor = Color.White;
-            this.open_tweak.FlatStyle = FlatStyle.Flat;
-            this.open_tweak.Location = new Point(290, 0x80);
+            // 
+            // open_tweak
+            // 
+            this.open_tweak.BackColor = System.Drawing.Color.White;
+            this.open_tweak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.open_tweak.Location = new System.Drawing.Point(193, 83);
+            this.open_tweak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.open_tweak.Name = "open_tweak";
-            this.open_tweak.Size = new Size(0x149, 0x25);
+            this.open_tweak.Size = new System.Drawing.Size(219, 24);
             this.open_tweak.TabIndex = 30;
             this.open_tweak.Text = "CHOOSE";
             this.open_tweak.UseVisualStyleBackColor = false;
-            this.open_tweak.Click += new EventHandler(this.open_tweak_Click);
+            this.open_tweak.Click += new System.EventHandler(this.open_tweak_Click);
+            // 
+            // groupBox1
+            // 
             this.groupBox1.Controls.Add(this.tweak_info);
             this.groupBox1.Controls.Add(this.tweakdata);
-            this.groupBox1.Location = new Point(0x13, 0xbc);
+            this.groupBox1.Location = new System.Drawing.Point(13, 122);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new Size(600, 210);
-            this.groupBox1.TabIndex = 0x1f;
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(400, 136);
+            this.groupBox1.TabIndex = 31;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tweak info";
+            // 
+            // tweak_info
+            // 
             this.tweak_info.AutoSize = true;
-            this.tweak_info.Font = new Font("Microsoft Sans Serif", 8f, FontStyle.Underline | FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.tweak_info.ForeColor = Color.Red;
-            this.tweak_info.Location = new Point(0xbb, 0x3a);
+            this.tweak_info.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tweak_info.ForeColor = System.Drawing.Color.Red;
+            this.tweak_info.Location = new System.Drawing.Point(125, 38);
+            this.tweak_info.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tweak_info.Name = "tweak_info";
-            this.tweak_info.Size = new Size(0xd9, 20);
+            this.tweak_info.Size = new System.Drawing.Size(154, 13);
             this.tweak_info.TabIndex = 0;
             this.tweak_info.Text = "SELECT A TWEAK FIRST";
-            this.tweakdata.BorderStyle = BorderStyle.FixedSingle;
-            ColumnHeader[] values = new ColumnHeader[] { this.columnHeader1, this.columnHeader2 };
-            this.tweakdata.Columns.AddRange(values);
-            this.tweakdata.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, 0);
+            // 
+            // tweakdata
+            // 
+            this.tweakdata.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tweakdata.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.tweakdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tweakdata.FullRowSelect = true;
             this.tweakdata.GridLines = true;
             this.tweakdata.HideSelection = false;
-            this.tweakdata.ImeMode = ImeMode.Close;
-            this.tweakdata.Location = new Point(13, 30);
-            this.tweakdata.Margin = new Padding(3, 5, 3, 5);
+            this.tweakdata.ImeMode = System.Windows.Forms.ImeMode.Close;
+            this.tweakdata.Location = new System.Drawing.Point(9, 19);
+            this.tweakdata.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.tweakdata.Name = "tweakdata";
-            this.tweakdata.Size = new Size(0x23b, 0xac);
-            this.tweakdata.TabIndex = 0x20;
+            this.tweakdata.Size = new System.Drawing.Size(381, 112);
+            this.tweakdata.TabIndex = 32;
             this.tweakdata.UseCompatibleStateImageBehavior = false;
-            this.tweakdata.View = View.Details;
+            this.tweakdata.View = System.Windows.Forms.View.Details;
             this.tweakdata.Visible = false;
+            // 
+            // columnHeader1
+            // 
             this.columnHeader1.Text = "Data";
             this.columnHeader1.Width = 250;
+            // 
+            // columnHeader2
+            // 
             this.columnHeader2.Text = "Value";
             this.columnHeader2.Width = 250;
-            this.tweak_icon.Location = new Point(13, 0x22);
+            // 
+            // tweak_icon
+            // 
+            this.tweak_icon.Location = new System.Drawing.Point(9, 22);
+            this.tweak_icon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tweak_icon.Name = "tweak_icon";
-            this.tweak_icon.Size = new Size(0x100, 0x100);
-            this.tweak_icon.SizeMode = PictureBoxSizeMode.StretchImage;
-            this.tweak_icon.TabIndex = 0x20;
+            this.tweak_icon.Size = new System.Drawing.Size(171, 166);
+            this.tweak_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.tweak_icon.TabIndex = 32;
             this.tweak_icon.TabStop = false;
+            // 
+            // groupBox2
+            // 
             this.groupBox2.Controls.Add(this.change_icon);
             this.groupBox2.Controls.Add(this.tweak_icon);
             this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new Point(0x13, 0x1a8);
+            this.groupBox2.Location = new System.Drawing.Point(13, 276);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new Size(600, 0x135);
-            this.groupBox2.TabIndex = 0x21;
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(400, 201);
+            this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tweak Icon (256x256)";
-            this.change_icon.BackColor = Color.White;
-            this.change_icon.FlatStyle = FlatStyle.Flat;
-            this.change_icon.Location = new Point(0x127, 0x22);
+            // 
+            // change_icon
+            // 
+            this.change_icon.BackColor = System.Drawing.Color.White;
+            this.change_icon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.change_icon.Location = new System.Drawing.Point(197, 22);
+            this.change_icon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.change_icon.Name = "change_icon";
-            this.change_icon.Size = new Size(0x121, 0x100);
-            this.change_icon.TabIndex = 0x23;
+            this.change_icon.Size = new System.Drawing.Size(193, 166);
+            this.change_icon.TabIndex = 35;
             this.change_icon.Text = "CHANGE ICON";
             this.change_icon.UseVisualStyleBackColor = false;
-            this.change_icon.Click += new EventHandler(this.change_icon_Click);
+            this.change_icon.Click += new System.EventHandler(this.change_icon_Click);
+            // 
+            // groupBox3
+            // 
             this.groupBox3.Controls.Add(this.richTextBox1);
             this.groupBox3.Enabled = false;
-            this.groupBox3.Location = new Point(0x13, 0x2f1);
+            this.groupBox3.Location = new System.Drawing.Point(13, 489);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new Size(600, 0x135);
-            this.groupBox3.TabIndex = 0x22;
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(400, 201);
+            this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Depiction";
-            this.richTextBox1.Location = new Point(13, 0x23);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(9, 23);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new Size(0x23b, 0x101);
+            this.richTextBox1.Size = new System.Drawing.Size(382, 168);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "<h1>Repo Manager Deluxe Default Tweak Depiction</h1>";
-            this.add_tweak.BackColor = Color.White;
+            // 
+            // add_tweak
+            // 
+            this.add_tweak.BackColor = System.Drawing.Color.White;
             this.add_tweak.Enabled = false;
-            this.add_tweak.FlatStyle = FlatStyle.Flat;
-            this.add_tweak.Location = new Point(0x13, 0x441);
+            this.add_tweak.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_tweak.Location = new System.Drawing.Point(13, 708);
+            this.add_tweak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_tweak.Name = "add_tweak";
-            this.add_tweak.Size = new Size(600, 0x41);
-            this.add_tweak.TabIndex = 0x23;
+            this.add_tweak.Size = new System.Drawing.Size(400, 42);
+            this.add_tweak.TabIndex = 35;
             this.add_tweak.Text = "Add Tweak";
             this.add_tweak.UseVisualStyleBackColor = false;
-            this.add_tweak.Click += new EventHandler(this.add_tweak_Click);
-            base.AutoScaleDimensions = new SizeF(9f, 20f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            base.ClientSize = new Size(0x285, 0x495);
-            base.Controls.Add(this.add_tweak);
-            base.Controls.Add(this.groupBox3);
-            base.Controls.Add(this.groupBox2);
-            base.Controls.Add(this.groupBox1);
-            base.Controls.Add(this.open_tweak);
-            base.Controls.Add(this.label2);
-            base.Controls.Add(this.label1);
-            base.Name = "addpackage";
-            base.ShowIcon = false;
-            base.StartPosition = FormStartPosition.CenterScreen;
+            this.add_tweak.Click += new System.EventHandler(this.add_tweak_Click);
+            // 
+            // addpackage
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(430, 761);
+            this.Controls.Add(this.add_tweak);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.open_tweak);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "addpackage";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((ISupportInitialize) this.tweak_icon).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tweak_icon)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            base.ResumeLayout(false);
-            base.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         private void open_tweak_Click(object sender, EventArgs e)

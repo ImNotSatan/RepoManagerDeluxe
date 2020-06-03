@@ -31,6 +31,18 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <EmbeddedResource Include="Repo_Manager_Deluxe\addpackage.resx">
+      <DependentUpon>addpackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repo_Manager_Deluxe\config.resx">
+      <DependentUpon>config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repo_Manager_Deluxe\edit.resx">
+      <DependentUpon>edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repo_Manager_Deluxe\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -52,12 +64,5 @@
     </Compile>
     <Compile Include="Repo_Manager_Deluxe\Program.cs" />
     <Compile Include="Repo_Manager_Deluxe\Settings.cs" />
-    <Compile Include="Repo_Manager_Deluxe\Properties\Resources.cs" />
-    <Compile Include="Repo_Manager_Deluxe\Properties\Settings.cs" />
-    <EmbeddedResource Include="Repo_Manager_Deluxe.addpackage.resources" />
-    <EmbeddedResource Include="Repo_Manager_Deluxe.config.resources" />
-    <EmbeddedResource Include="Repo_Manager_Deluxe.edit.resources" />
-    <EmbeddedResource Include="Repo_Manager_Deluxe.Main.resources" />
-    <EmbeddedResource Include="Repo_Manager_Deluxe.Properties.Resources.resources" />
   </ItemGroup>
 </Project>

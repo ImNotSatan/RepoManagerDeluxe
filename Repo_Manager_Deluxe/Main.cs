@@ -272,133 +272,182 @@
 
         private void InitializeComponent()
         {
-            this.components = new Container();
-            this.label1 = new Label();
-            this.label2 = new Label();
-            this.add_package = new Button();
-            this.generate_packages = new Button();
-            this.reload_packages = new Button();
-            this.lock_repo = new Button();
-            this.packagelist = new ListBox();
-            this.package_options = new ContextMenuStrip(this.components);
-            this.editToolStripMenuItem = new ToolStripMenuItem();
-            this.removeToolStripMenuItem = new ToolStripMenuItem();
-            this.richTextBox1 = new RichTextBox();
-            this.showlogs = new Button();
-            this.groupBox1 = new GroupBox();
-            this.repolink = new TextBox();
-            this.label10 = new Label();
-            this.label12 = new Label();
-            this.open_folder = new Button();
-            this.change_icon = new Button();
-            this.save_release = new Button();
-            this.description = new TextBox();
-            this.label9 = new Label();
-            this.version = new TextBox();
-            this.label8 = new Label();
-            this.origin = new TextBox();
-            this.label7 = new Label();
-            this.codename = new TextBox();
-            this.label5 = new Label();
-            this.name = new TextBox();
-            this.label6 = new Label();
-            this.repo_icon = new PictureBox();
-            this.label3 = new Label();
-            this.label4 = new Label();
-            this.settings = new Button();
-            this.label11 = new Label();
+            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.add_package = new System.Windows.Forms.Button();
+            this.generate_packages = new System.Windows.Forms.Button();
+            this.reload_packages = new System.Windows.Forms.Button();
+            this.lock_repo = new System.Windows.Forms.Button();
+            this.packagelist = new System.Windows.Forms.ListBox();
+            this.package_options = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.showlogs = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.repolink = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.open_folder = new System.Windows.Forms.Button();
+            this.change_icon = new System.Windows.Forms.Button();
+            this.save_release = new System.Windows.Forms.Button();
+            this.description = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.version = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.origin = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.codename = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.repo_icon = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.settings = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.package_options.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((ISupportInitialize) this.repo_icon).BeginInit();
-            base.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repo_icon)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
-            this.label1.Font = new Font("Microsoft Sans Serif", 100f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.label1.Location = new Point(560, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(373, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new Size(0x1ee, 0xe2);
+            this.label1.Size = new System.Drawing.Size(334, 153);
             this.label1.TabIndex = 0;
             this.label1.Text = "RDL";
+            // 
+            // label2
+            // 
             this.label2.AutoSize = true;
-            this.label2.Font = new Font("Microsoft Sans Serif", 16f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.label2.Location = new Point(0x272, 0xd9);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(417, 141);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new Size(0x14d, 0x25);
+            this.label2.Size = new System.Drawing.Size(229, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Repo Manager Deluxe";
-            this.add_package.BackColor = Color.LightGreen;
-            this.add_package.FlatStyle = FlatStyle.Flat;
-            this.add_package.Location = new Point(12, 0x163);
+            // 
+            // add_package
+            // 
+            this.add_package.BackColor = System.Drawing.Color.LightGreen;
+            this.add_package.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_package.Location = new System.Drawing.Point(8, 231);
+            this.add_package.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.add_package.Name = "add_package";
-            this.add_package.Size = new Size(0x1a0, 0xbc);
+            this.add_package.Size = new System.Drawing.Size(277, 122);
             this.add_package.TabIndex = 5;
             this.add_package.Text = "Add Package";
             this.add_package.UseVisualStyleBackColor = false;
-            this.add_package.Click += new EventHandler(this.add_package_Click);
-            this.generate_packages.BackColor = Color.SkyBlue;
-            this.generate_packages.FlatStyle = FlatStyle.Flat;
-            this.generate_packages.Location = new Point(0x1c0, 560);
+            this.add_package.Click += new System.EventHandler(this.add_package_Click);
+            // 
+            // generate_packages
+            // 
+            this.generate_packages.BackColor = System.Drawing.Color.SkyBlue;
+            this.generate_packages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generate_packages.Location = new System.Drawing.Point(299, 364);
+            this.generate_packages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.generate_packages.Name = "generate_packages";
-            this.generate_packages.Size = new Size(0x1a0, 0xbc);
+            this.generate_packages.Size = new System.Drawing.Size(277, 122);
             this.generate_packages.TabIndex = 6;
             this.generate_packages.Text = "Recreate Packages File";
             this.generate_packages.UseVisualStyleBackColor = false;
-            this.generate_packages.Click += new EventHandler(this.generate_packages_Click);
-            this.reload_packages.BackColor = Color.LightYellow;
-            this.reload_packages.FlatStyle = FlatStyle.Flat;
-            this.reload_packages.Location = new Point(0x1c0, 0x163);
+            this.generate_packages.Click += new System.EventHandler(this.generate_packages_Click);
+            // 
+            // reload_packages
+            // 
+            this.reload_packages.BackColor = System.Drawing.Color.LightYellow;
+            this.reload_packages.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reload_packages.Location = new System.Drawing.Point(299, 231);
+            this.reload_packages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reload_packages.Name = "reload_packages";
-            this.reload_packages.Size = new Size(0x1a0, 0xbc);
+            this.reload_packages.Size = new System.Drawing.Size(277, 122);
             this.reload_packages.TabIndex = 7;
             this.reload_packages.Text = "Reload Packages";
             this.reload_packages.UseVisualStyleBackColor = false;
-            this.reload_packages.Click += new EventHandler(this.reload_packages_Click);
-            this.lock_repo.BackColor = Color.MistyRose;
-            this.lock_repo.FlatStyle = FlatStyle.Flat;
-            this.lock_repo.Location = new Point(12, 560);
+            this.reload_packages.Click += new System.EventHandler(this.reload_packages_Click);
+            // 
+            // lock_repo
+            // 
+            this.lock_repo.BackColor = System.Drawing.Color.MistyRose;
+            this.lock_repo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lock_repo.Location = new System.Drawing.Point(8, 364);
+            this.lock_repo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lock_repo.Name = "lock_repo";
-            this.lock_repo.Size = new Size(0x1a0, 0xbc);
+            this.lock_repo.Size = new System.Drawing.Size(277, 122);
             this.lock_repo.TabIndex = 8;
             this.lock_repo.Text = "Lock Repo";
             this.lock_repo.UseVisualStyleBackColor = false;
-            this.lock_repo.Click += new EventHandler(this.lock_repo_Click);
+            this.lock_repo.Click += new System.EventHandler(this.lock_repo_Click);
+            // 
+            // packagelist
+            // 
             this.packagelist.ContextMenuStrip = this.package_options;
-            this.packagelist.Font = new Font("Microsoft Sans Serif", 20f, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.packagelist.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.packagelist.FormattingEnabled = true;
-            this.packagelist.ItemHeight = 0x2e;
-            this.packagelist.Location = new Point(0x376, 0x177);
+            this.packagelist.ItemHeight = 31;
+            this.packagelist.Location = new System.Drawing.Point(591, 244);
+            this.packagelist.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.packagelist.Name = "packagelist";
-            this.packagelist.Size = new Size(0x2fa, 0x146);
+            this.packagelist.Size = new System.Drawing.Size(509, 190);
             this.packagelist.TabIndex = 9;
-            this.packagelist.DoubleClick += new EventHandler(this.packagelist_DoubleClick);
-            this.package_options.ImageScalingSize = new Size(0x18, 0x18);
-            ToolStripItem[] toolStripItems = new ToolStripItem[] { this.editToolStripMenuItem, this.removeToolStripMenuItem };
-            this.package_options.Items.AddRange(toolStripItems);
+            this.packagelist.DoubleClick += new System.EventHandler(this.packagelist_DoubleClick);
+            // 
+            // package_options
+            // 
+            this.package_options.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.package_options.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.editToolStripMenuItem,
+            this.removeToolStripMenuItem});
             this.package_options.Name = "package_options";
-            this.package_options.Size = new Size(0x95, 0x44);
-            this.package_options.Opening += new CancelEventHandler(this.package_options_Opening);
+            this.package_options.Size = new System.Drawing.Size(118, 48);
+            this.package_options.Opening += new System.ComponentModel.CancelEventHandler(this.package_options_Opening);
+            // 
+            // editToolStripMenuItem
+            // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new Size(0x94, 0x20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editToolStripMenuItem.Text = "Edit";
-            this.editToolStripMenuItem.Click += new EventHandler(this.editToolStripMenuItem_Click);
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
+            // 
+            // removeToolStripMenuItem
+            // 
             this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new Size(0x94, 0x20);
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.removeToolStripMenuItem.Text = "Remove";
-            this.removeToolStripMenuItem.Click += new EventHandler(this.removeToolStripMenuItem_Click);
-            this.richTextBox1.Location = new Point(0x45c, 9);
+            this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(744, 6);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new Size(0x1e4, 0x13f);
+            this.richTextBox1.Size = new System.Drawing.Size(324, 209);
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "";
             this.richTextBox1.Visible = false;
-            this.showlogs.BackColor = Color.White;
-            this.showlogs.FlatStyle = FlatStyle.Flat;
-            this.showlogs.Location = new Point(220, 12);
+            // 
+            // showlogs
+            // 
+            this.showlogs.BackColor = System.Drawing.Color.White;
+            this.showlogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showlogs.Location = new System.Drawing.Point(147, 8);
+            this.showlogs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showlogs.Name = "showlogs";
-            this.showlogs.Size = new Size(0xb2, 0x2d);
+            this.showlogs.Size = new System.Drawing.Size(119, 29);
             this.showlogs.TabIndex = 11;
             this.showlogs.Text = "Show logs";
             this.showlogs.UseVisualStyleBackColor = false;
-            this.showlogs.Click += new EventHandler(this.showlogs_Click);
+            this.showlogs.Click += new System.EventHandler(this.showlogs_Click);
+            // 
+            // groupBox1
+            // 
             this.groupBox1.Controls.Add(this.repolink);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label12);
@@ -417,170 +466,259 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.repo_icon);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new Point(12, 0x12);
+            this.groupBox1.Location = new System.Drawing.Point(8, 12);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new Size(0x1a0, 0x14b);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(277, 215);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Your Repo";
-            this.repolink.Location = new Point(0x80, 0x120);
+            // 
+            // repolink
+            // 
+            this.repolink.Location = new System.Drawing.Point(85, 187);
+            this.repolink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.repolink.Name = "repolink";
-            this.repolink.Size = new Size(0x102, 0x1a);
-            this.repolink.TabIndex = 0x1f;
+            this.repolink.Size = new System.Drawing.Size(173, 20);
+            this.repolink.TabIndex = 31;
             this.repolink.Text = "https://imnotsatan.github.io/";
-            this.repolink.TextChanged += new EventHandler(this.repolink_TextChanged);
+            this.repolink.TextChanged += new System.EventHandler(this.repolink_TextChanged);
+            // 
+            // label10
+            // 
             this.label10.AutoSize = true;
-            this.label10.Font = new Font("Microsoft Sans Serif", 8f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.label10.Location = new Point(0x21, 0x6d);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(22, 71);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new Size(0x45, 20);
+            this.label10.Size = new System.Drawing.Size(49, 13);
             this.label10.TabIndex = 30;
             this.label10.Text = "(64x64)";
+            // 
+            // label12
+            // 
             this.label12.AutoSize = true;
-            this.label12.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Underline | FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.label12.Location = new Point(0x16, 0x124);
-            this.label12.Margin = new Padding(4, 0, 4, 0);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(15, 190);
             this.label12.Name = "label12";
-            this.label12.Size = new Size(0x5d, 20);
-            this.label12.TabIndex = 0x10;
+            this.label12.Size = new System.Drawing.Size(65, 13);
+            this.label12.TabIndex = 16;
             this.label12.Text = "Repo Link";
-            this.open_folder.BackColor = Color.White;
-            this.open_folder.FlatStyle = FlatStyle.Flat;
-            this.open_folder.Location = new Point(6, 0x19);
+            // 
+            // open_folder
+            // 
+            this.open_folder.BackColor = System.Drawing.Color.White;
+            this.open_folder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.open_folder.Location = new System.Drawing.Point(4, 16);
+            this.open_folder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.open_folder.Name = "open_folder";
-            this.open_folder.Size = new Size(0xb8, 0x20);
-            this.open_folder.TabIndex = 0x1d;
+            this.open_folder.Size = new System.Drawing.Size(123, 21);
+            this.open_folder.TabIndex = 29;
             this.open_folder.Text = "OPEN REPO FOLDER";
             this.open_folder.UseVisualStyleBackColor = false;
-            this.open_folder.Click += new EventHandler(this.open_folder_Click);
-            this.change_icon.BackColor = Color.White;
-            this.change_icon.FlatStyle = FlatStyle.Flat;
-            this.change_icon.Location = new Point(0x15, 0xee);
+            this.open_folder.Click += new System.EventHandler(this.open_folder_Click);
+            // 
+            // change_icon
+            // 
+            this.change_icon.BackColor = System.Drawing.Color.White;
+            this.change_icon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.change_icon.Location = new System.Drawing.Point(14, 155);
+            this.change_icon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.change_icon.Name = "change_icon";
-            this.change_icon.Size = new Size(100, 0x20);
-            this.change_icon.TabIndex = 0x1c;
+            this.change_icon.Size = new System.Drawing.Size(67, 21);
+            this.change_icon.TabIndex = 28;
             this.change_icon.Text = "CHANGE";
             this.change_icon.UseVisualStyleBackColor = false;
-            this.change_icon.Click += new EventHandler(this.change_icon_Click);
-            this.save_release.BackColor = Color.White;
-            this.save_release.FlatStyle = FlatStyle.Flat;
-            this.save_release.Location = new Point(0xf6, 0xee);
+            this.change_icon.Click += new System.EventHandler(this.change_icon_Click);
+            // 
+            // save_release
+            // 
+            this.save_release.BackColor = System.Drawing.Color.White;
+            this.save_release.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.save_release.Location = new System.Drawing.Point(164, 155);
+            this.save_release.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.save_release.Name = "save_release";
-            this.save_release.Size = new Size(0x8d, 0x20);
-            this.save_release.TabIndex = 0x1b;
+            this.save_release.Size = new System.Drawing.Size(94, 21);
+            this.save_release.TabIndex = 27;
             this.save_release.Text = "SAVE";
             this.save_release.UseVisualStyleBackColor = false;
-            this.save_release.Click += new EventHandler(this.save_release_Click);
-            this.description.Location = new Point(0xf6, 0x6f);
+            this.save_release.Click += new System.EventHandler(this.save_release_Click);
+            // 
+            // description
+            // 
+            this.description.Location = new System.Drawing.Point(164, 72);
+            this.description.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.description.Name = "description";
-            this.description.Size = new Size(140, 0x1a);
-            this.description.TabIndex = 0x1a;
+            this.description.Size = new System.Drawing.Size(95, 20);
+            this.description.TabIndex = 26;
+            // 
+            // label9
+            // 
             this.label9.AutoSize = true;
-            this.label9.Location = new Point(0x9a, 0x72);
+            this.label9.Location = new System.Drawing.Point(103, 74);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new Size(0x59, 20);
-            this.label9.TabIndex = 0x19;
+            this.label9.Size = new System.Drawing.Size(60, 13);
+            this.label9.TabIndex = 25;
             this.label9.Text = "Description";
-            this.version.Location = new Point(0xf6, 0xd0);
+            // 
+            // version
+            // 
+            this.version.Location = new System.Drawing.Point(164, 135);
+            this.version.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.version.Name = "version";
-            this.version.Size = new Size(140, 0x1a);
-            this.version.TabIndex = 0x18;
+            this.version.Size = new System.Drawing.Size(95, 20);
+            this.version.TabIndex = 24;
+            // 
+            // label8
+            // 
             this.label8.AutoSize = true;
-            this.label8.Location = new Point(0x9a, 0xd1);
+            this.label8.Location = new System.Drawing.Point(103, 136);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new Size(0x3f, 20);
-            this.label8.TabIndex = 0x17;
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 23;
             this.label8.Text = "Version";
-            this.origin.Location = new Point(0xf6, 0xaf);
+            // 
+            // origin
+            // 
+            this.origin.Location = new System.Drawing.Point(164, 114);
+            this.origin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.origin.Name = "origin";
-            this.origin.Size = new Size(140, 0x1a);
-            this.origin.TabIndex = 0x16;
+            this.origin.Size = new System.Drawing.Size(95, 20);
+            this.origin.TabIndex = 22;
+            // 
+            // label7
+            // 
             this.label7.AutoSize = true;
-            this.label7.Location = new Point(0x9a, 0xb2);
+            this.label7.Location = new System.Drawing.Point(103, 116);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new Size(50, 20);
-            this.label7.TabIndex = 0x15;
+            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.TabIndex = 21;
             this.label7.Text = "Origin";
-            this.codename.Location = new Point(0xf6, 0x8f);
+            // 
+            // codename
+            // 
+            this.codename.Location = new System.Drawing.Point(164, 93);
+            this.codename.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.codename.Name = "codename";
-            this.codename.Size = new Size(140, 0x1a);
+            this.codename.Size = new System.Drawing.Size(95, 20);
             this.codename.TabIndex = 20;
+            // 
+            // label5
+            // 
             this.label5.AutoSize = true;
-            this.label5.Location = new Point(0x9a, 0x92);
+            this.label5.Location = new System.Drawing.Point(103, 95);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new Size(0x57, 20);
-            this.label5.TabIndex = 0x13;
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 19;
             this.label5.Text = "Codename";
-            this.name.Location = new Point(0xf6, 0x4e);
+            // 
+            // name
+            // 
+            this.name.Location = new System.Drawing.Point(164, 51);
+            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.name.Name = "name";
-            this.name.Size = new Size(140, 0x1a);
-            this.name.TabIndex = 0x12;
+            this.name.Size = new System.Drawing.Size(95, 20);
+            this.name.TabIndex = 18;
+            // 
+            // label6
+            // 
             this.label6.AutoSize = true;
-            this.label6.Location = new Point(0x9a, 0x52);
+            this.label6.Location = new System.Drawing.Point(103, 53);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new Size(0x33, 20);
-            this.label6.TabIndex = 0x10;
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 16;
             this.label6.Text = "Name";
-            this.repo_icon.Location = new Point(0x26, 0x98);
+            // 
+            // repo_icon
+            // 
+            this.repo_icon.Location = new System.Drawing.Point(25, 99);
+            this.repo_icon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.repo_icon.Name = "repo_icon";
-            this.repo_icon.Size = new Size(0x40, 0x41);
-            this.repo_icon.SizeMode = PictureBoxSizeMode.StretchImage;
+            this.repo_icon.Size = new System.Drawing.Size(43, 42);
+            this.repo_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.repo_icon.TabIndex = 14;
             this.repo_icon.TabStop = false;
+            // 
+            // label3
+            // 
             this.label3.AutoSize = true;
-            this.label3.Font = new Font("Microsoft Sans Serif", 8f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.label3.Location = new Point(15, 0x59);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(10, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new Size(0x6a, 20);
+            this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "REPO ICON";
+            // 
+            // label4
+            // 
             this.label4.AutoSize = true;
-            this.label4.Font = new Font("Microsoft Sans Serif", 8f, FontStyle.Underline | FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.label4.Location = new Point(0x372, 0x160);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(588, 229);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new Size(0x116, 20);
+            this.label4.Size = new System.Drawing.Size(200, 13);
             this.label4.TabIndex = 13;
             this.label4.Text = "Packages (Right click for options)";
-            this.settings.BackColor = Color.White;
-            this.settings.FlatStyle = FlatStyle.Flat;
-            this.settings.Location = new Point(0x2c8, 0x10d);
+            // 
+            // settings
+            // 
+            this.settings.BackColor = System.Drawing.Color.White;
+            this.settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settings.Location = new System.Drawing.Point(475, 175);
+            this.settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.settings.Name = "settings";
-            this.settings.Size = new Size(0xac, 0x2d);
+            this.settings.Size = new System.Drawing.Size(115, 29);
             this.settings.TabIndex = 14;
             this.settings.Text = "⚙ SETTINGS";
             this.settings.UseVisualStyleBackColor = false;
-            this.settings.Click += new EventHandler(this.settings_Click);
+            this.settings.Click += new System.EventHandler(this.settings_Click);
+            // 
+            // label11
+            // 
             this.label11.AutoSize = true;
-            this.label11.Location = new Point(0x3b1, 0x61);
+            this.label11.Location = new System.Drawing.Point(630, 63);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new Size(0x33, 20);
+            this.label11.Size = new System.Drawing.Size(37, 13);
             this.label11.TabIndex = 15;
-            this.label11.Text = "v0.0.1";
-            base.AutoScaleDimensions = new SizeF(9f, 20f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            base.ClientSize = new Size(0x67c, 0x314);
-            base.Controls.Add(this.label11);
-            base.Controls.Add(this.settings);
-            base.Controls.Add(this.label4);
-            base.Controls.Add(this.showlogs);
-            base.Controls.Add(this.groupBox1);
-            base.Controls.Add(this.richTextBox1);
-            base.Controls.Add(this.packagelist);
-            base.Controls.Add(this.lock_repo);
-            base.Controls.Add(this.reload_packages);
-            base.Controls.Add(this.generate_packages);
-            base.Controls.Add(this.add_package);
-            base.Controls.Add(this.label2);
-            base.Controls.Add(this.label1);
-            base.Name = "Main";
-            base.ShowIcon = false;
-            base.StartPosition = FormStartPosition.CenterScreen;
+            this.label11.Text = "v0.0.2";
+            // 
+            // Main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1107, 512);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.settings);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.showlogs);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.packagelist);
+            this.Controls.Add(this.lock_repo);
+            this.Controls.Add(this.reload_packages);
+            this.Controls.Add(this.generate_packages);
+            this.Controls.Add(this.add_package);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Main";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.package_options.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((ISupportInitialize) this.repo_icon).EndInit();
-            base.ResumeLayout(false);
-            base.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.repo_icon)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         public void loaddebs()
