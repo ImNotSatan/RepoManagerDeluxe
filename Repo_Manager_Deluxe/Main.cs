@@ -59,7 +59,7 @@
             this.hide_logs();
             if(!File.Exists("index.html") && !File.Exists("index.php"))
             {
-                File.WriteAllText("index.html", "<!--RDM--><h1><center><a href='" + repolink.Text + "'>Add my Repo</a><br>By Repo Manager Deluxe.</center></h1>");
+                File.WriteAllText("index.html", "<!--RDM--><h1><center><a href='cydia://url/https://cydia.saurik.com/api/share#?source=" + repolink.Text + "'>Add my Repo</a><br>By Repo Manager Deluxe.</center></h1>");
             }
             if (File.Exists(Settings.repo + "/repo.link"))
             {
@@ -701,7 +701,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(37, 13);
             this.label11.TabIndex = 15;
-            this.label11.Text = "v0.0.5";
+            this.label11.Text = "v0.0.6";
             // 
             // Main
             // 
@@ -851,7 +851,7 @@
             {
                 if(File.ReadAllText("index.html").Contains("<!--RDM-->"))
                 {
-                    File.WriteAllText("index.html", "<!--RDM--><h1><center><a href='" + repolink.Text + "'>Add my Repo</a><br>By Repo Manager Deluxe.</center></h1>");
+                    File.WriteAllText("index.html", "<!--RDM--><h1><center><a href='cydia://url/https://cydia.saurik.com/api/share#?source=" + repolink.Text + "'>Add my Repo</a><br>By Repo Manager Deluxe.</center></h1>");
                 }
             }
         }
